@@ -3,6 +3,12 @@ void fun4() {
   int a = 20;
   int b = 30;
   int i = 0;
+  
+#ifdef XXXX1
+  if (i>20) {
+#else
+  if (i<50) {
+#endif
   for (i=0; i<30; i++) {
     for (i=0; i<30; i++) {
       if (i>a) {
